@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ping_Pong</title>
+    <link REL="StyleSheet" TYPE="text/css" HREF="ping_pong.css">
+</head>
+<body bgcolor="#E6E6FA">
+
+<header>
+   <h1>Ping-Pong</h1>
+</header>
+
+<nav>
+<h4>About Ping Pong</h4>
+<h5 style = "color: #FFE5B4">Created by:</h5>
+<h6 style = "color: white" >Annie Sonna</h6>
+<h5 style = "color: #FFE5B4">GitHub Username/URL:</h5>
+<h6 style = "color: blue">asonna/asonna.github.io</h6>
+<h5 style = "color: #FFE5B4">Level 2 Test for:</h5>
+<h6 style = "color: white">Java</h6>
+</nav>
+
+<article id = "art">
+  <h1>Let's play!</h1>
+<h4>Rules</h4>
+  <p>Ping Pong will count from 1 up to your number and assuming the following exceptions:</p>
+  <ol>
+    <li>Numbers divisible by 3 become &quot;ping&quot;</li>
+    <li>Numbers divisible by 5 become &quot;pong&quot;</li>
+    <li>Numbers divisible by 3 and 5 become &quot;pingpong&quot;</li>
+  </ol>
+  <p><strong>Enter your number here:</strong>
+   <input type="integer" name="in" id = "inp" value>
+   <button style = "background-color: gray" onclick="replaceNumbers()" type="submit">PingPong!</button> </p>
+</article>
+
+<script>
+function replaceNumbers() {
+ var text = "";
+    var i;
+var userInput = document.getElementById("inp").value;
+var result ="";
+var finalResult = "";
+    for (i = 1; i <= userInput; i++) {
+result=""
+        if(i%3==0)
+result = "ping"
+if(i%5==0)
+result = result + "pong"
+if(result !="")
+{
+    if(finalResult == "")
+       finalResult = result
+    else
+       finalResult = finalResult + "<br>" + result
+}
+else
+{
+    if(finalResult == "")
+       finalResult = i
+    else
+       finalResult = finalResult + "<br>" + i
+}
+}
+    document.getElementById("art").innerHTML = document.getElementById("art").innerHTML + "<BR>" + finalResult;
+}
+</script>
+
+</body>
+</html>
