@@ -1,0 +1,38 @@
+<style>
+  div.container {
+      border: 1px platinum;
+      color: grey cloud;
+    }
+
+  header, footer {
+      padding: 1em;
+      color: black;
+      background-color: #FFE5B4;
+      clear: left;
+      text-align: center;
+  }
+
+  nav {
+      float: left;
+      max-width: 180px;
+      padding: 3.0em;
+      background-color: #99C68E;
+      margin-top: 5px;
+      padding-bottom: 400px;
+      border-top: 2px;
+  }
+
+  h4, h5, h6{
+    line-height: 2px;
+  }
+
+  article {
+      margin-left: 0px;
+      border-left: 1px platinum;
+      padding: 1em;
+      overflow: hidden;
+      margin-top: 20px;
+      padding-bottom: 100px;
+
+  }
+</style>
